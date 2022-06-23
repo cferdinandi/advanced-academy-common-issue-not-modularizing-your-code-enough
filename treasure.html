@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Treasure Chest | Seven Seas</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<nav>
+			<a href="index.html">🏴‍☠️ Seven Seas</a>
+			<p class="description">The travel app for pirates</p>
+		</nav>
+
+		<h1>Treasure Chest</h1>
+
+		<p id="loot" aria-live="polite"></p>
+
+		<div class="treasure-chest">
+			<div>
+				<form data-treasure="gold">
+					<label for="gold">Amount of Gold</label>
+					<input type="number" step="1" id="gold" value="1">
+					<button class="btn btn-secondary">Add Gold</button>
+				</form>
+			</div>
+
+			<div>
+				<form data-treasure="silver">
+					<label for="silver">Amount of Silver</label>
+					<input type="number" step="1" id="silver" value="1">
+					<button class="btn btn-tertiary">Add Silver</button>
+				</form>
+			</div>
+
+			<div>
+				<form data-treasure="bronze">
+					<label for="bronze">Amount of Bronze</label>
+					<input type="number" step="1" id="bronze" value="1">
+					<button>Add Bronze</button>
+				</form>
+			</div>
+		</div>
+
+
+		<script type="module" src="index.js"></script>
+
+	</body>
+</html>

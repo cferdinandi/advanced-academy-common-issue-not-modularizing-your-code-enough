@@ -1,0 +1,188 @@
+/**
+ * Main Styles
+ */
+
+body {
+	color: #272727;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	margin: 1em auto;
+	max-width: 44em;
+	width: 88%;
+}
+
+/**
+ * Add box sizing to everything
+ * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	color: #0088cc;
+}
+
+a:active,
+a:hover {
+	color: #272727;
+}
+
+
+/**
+ * Nav Menu
+ */
+
+@media (min-width: 40em) {
+	nav {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 2em;
+		grid-row-gap: 0;
+	}
+
+	nav .description {
+		text-align: right;
+	}
+}
+
+
+nav a {
+	color: #272727;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:active,
+nav a:hover {
+	color: #0088cc;
+}
+
+nav .description {
+	color: #808080;
+	font-style: italic;
+}
+
+
+/**
+ * Buttons
+ */
+
+button,
+.btn {
+	background-color: #0088cc;
+	border: 1px solid #0088cc;
+	border-radius: 0.25em;
+	font-family: inherit;
+	color: #ffffff;
+	font-size: 1em;
+	margin-right: 0.5em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+	background-color: #005c8a;
+	border-color: #005c8c;
+	color: #ffffff;
+}
+
+.btn-secondary {
+	background-color: #f7272f;
+	border-color: #f7272f;
+}
+
+.btn-secondary:hover {
+	background-color: #cb070e;
+	border-color: #cb070e;
+}
+
+.btn-tertiary {
+	background-color: #272727;
+	border-color: #272727;
+}
+
+.btn-tertiary:hover {
+	background-color: #808080;
+	border-color: #808080;
+}
+
+
+
+/**
+ * Typography
+ */
+
+.text-large {
+	font-size: 1.2em;
+}
+
+
+
+/**
+ * Forms
+ */
+
+label,
+input {
+	display: block;
+	width: 100%;
+}
+
+input {
+	margin-bottom: 0.5em;
+}
+
+
+
+/**
+ * Dice Game
+ */
+
+@media (min-width: 40em) {
+	.dice-game {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 2em;
+		grid-row-gap: 0;
+	}
+}
+
+
+
+/**
+ * Treasure Chest
+ */
+
+#loot {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+@media (min-width: 40em) {
+	.treasure-chest {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 2em;
+		grid-row-gap: 0;
+	}
+}
+
+[data-treasure] {
+	margin-bottom: 1.5em;
+}
